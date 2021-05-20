@@ -81,7 +81,13 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
+
+div > p {
+    margin: 0;
+}
+
+
 footer {
     position: fixed;
     width: 100%;

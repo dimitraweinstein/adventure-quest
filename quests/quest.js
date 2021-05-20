@@ -1,7 +1,9 @@
 import quests from '../data/quest-data.js';
 import { changeGold, changeHP, completeQuest } from '../local-storage-utils.js';
 import { findById } from '../utils.js';
+import { renderStatsHeader } from '../stats-header.js';
 
+renderStatsHeader();
 
 const section = document.querySelector('.main-section');
 
@@ -17,6 +19,7 @@ console.log(quest);
 const h1 = document.createElement('h1');
 const img = document.createElement('img');
 const p = document.createElement('p');
+
 
 h1.textContent = quest.title;
 console.log();
