@@ -36,6 +36,8 @@ export function changeGold(someGoldValue) {
 
 export function completeQuest(questId) {
     const player = getPlayer();
-
+    
+    player.completed[questId] = true;
+    
     setPlayer(player);
 }

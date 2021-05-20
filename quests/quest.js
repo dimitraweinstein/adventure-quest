@@ -1,4 +1,5 @@
 import quests from '../data/quest-data.js';
+import { changeGold, changeHP, completeQuest } from '../local-storage-utils.js';
 import { findById } from '../utils.js';
 
 
@@ -11,13 +12,14 @@ console.log(id);
 
 const quest = findById(quests, id);
 
-console.log(quests);
+console.log(quest);
 
 const h1 = document.createElement('h1');
 const img = document.createElement('img');
 const p = document.createElement('p');
 
 h1.textContent = quest.title;
+console.log();
 img.src = `../assets/${quest.image}`;
 p.textContent = quest.description;
 
@@ -34,5 +36,33 @@ for (let choice of quest.choices) {
     form.append(label);
 }
 
+const button = document.createElement('button');
+button.textContent = 'For Mario!';
+form.append(button);
+
+form.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    console.log(button);
+    
+    const formData = new FormData(form);
+    const choiceId = formData.get('choice');
+    console.log(choiceId);
+    const selectedChoice = findById(quest.choices, choiceId);
+
+    completeQuest(quest.id);
+    changeGold(selectedChoice.gold);
+    changeHP(selectedChoice.hp);
+
+    const resultsDiv = document.createElement('div');
+    resultsDiv.textContent = selectedChoice.result;
+
+    form.remove();
+    section.append(resultsDiv);
+
+    setTimeout(
+        () => window.location = '../map',
+        9000
+    );
+});
 
 section.append(h1, img, p, form);
