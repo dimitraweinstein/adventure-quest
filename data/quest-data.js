@@ -103,3 +103,11 @@ const rescue = {
         gold: 100,
     }]
 };
+
+const quests = [
+    prepare,
+    bridge,
+    rescue
+];
+
+export default quests;
