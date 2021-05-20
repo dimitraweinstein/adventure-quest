@@ -1,3 +1,5 @@
+import { setPlayer } from './local-storage-utils.js';
+
 // import functions and grab DOM elements
 const form = document.querySelector('#player-form');
 
@@ -8,9 +10,16 @@ form.addEventListener('submit', (e) => {
     const formData = new FormData(form);
 
     const player = formData.get('playerName');
-    const character = formData.get('character');
+    const playerCharacter = formData.get('character');
 
-    
+    const playerObject = {
+        name: player,
+        character: playerCharacter,
+        completed: {},
+        hp: 35,
+        gold: 0,
+    };
+    setPlayer(playerObject);
 
-
-})
+    window.location = './map';
+});
