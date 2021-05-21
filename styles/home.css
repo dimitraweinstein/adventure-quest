@@ -1,1 +1,124 @@
 /* add home page styles here */
+
+
+header {
+    background-color: #e52521;
+    justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    display: flex;
+    justify-self: center;
+    margin: 400px;
+    font-size: 2rem;
+}
+
+
+body {
+    background-color: #fbd00060;
+    background-image: url('../assets/mario-title.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+#radio-div {
+    display: flex;
+    flex-direction: row;
+    margin: 55px;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+#player-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 125px;
+}
+
+#name {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin: 25px;
+}
+
+h6 {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    height: 35px;
+    width: 180px;
+    border-style: inset;
+    padding: 10px;
+    margin-right: 65px;
+    margin-top: -10px;
+}
+
+button {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    background-color: transparent;
+    background-image: url('../assets/Mushroom - Life.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px -10px;
+    text-indent: -50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    border: none;
+    height: 550px;
+    width: 150px;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+[type = radio] {
+    display: none;
+    background-color: transparent;
+    filter: drop-shadow(15px 10px 8px #00000070);
+}
+
+[type = radio]:checked + .character-image {
+    border: solid 4px #049cd8;
+    border-style: inset;
+    border-radius: 20%;
+    background-color: #e5252180;
+    box-shadow: var(--shadow);
+    filter: drop-shadow(15px 10px 8px #00000070);
+}
+
+img {
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 7px;
+    border-radius: 20%;
+    background-color: transparent;
+    filter: drop-shadow(15px 10px 8px #00000070);
+}
+
+

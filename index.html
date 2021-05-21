@@ -14,32 +14,46 @@
 
 <body>
     <header>
-        <div class="gutter-right logo">
+        <div id="header-title">
+            <h1> Super Mario Adventure Quest: Rescue Mario!</h1>
         </div>
     </header>
     <main>
         <form id="player-form">
-            <label>
-                Name
-                <input id="playerName" name="playerName" placeholder="Player Name">
+            <label id="name">
+                <input id="playerName" name="playerName" placeholder="Enter Your Name Here!">
             </label>
-            <label>
-                Yoshi
-                <input id="yoshi" type="radio" name="character" value="yoshi">
-            </label>
-            <label>
-                Luigi
-                <input id="luigi" type="radio" name="character" value="luigi">
-            </label>
-            <label>
-                Princess Peach
-                <input id="princess-peach" type="radio" name="character" value="princess-peach">
-            </label>
-            <label>
-                Toadette
-                <input id="toadette" type="radio" name="character" value="toadette">
-            </label>
-            <button id="submit-button" type="submit">Adventure Time!</button>
+                <div id="radio-div">
+                    <label>
+                        <input id="yoshi" type="radio" name="character" value="yoshi">
+                        <img class="character-image" id="yoshi-image">
+                        <h6>Yoshi</h6>
+                    </label>
+
+                    <label>
+                        <input id="luigi" type="radio" name="character" value="luigi">
+                        <img class="character-image" id="luigi-image">
+                        <h6>Luigi</h6>
+                    </label>
+
+                    <label>
+                        <input id="princess-peach" type="radio" name="character" value="princess-peach">
+                        <img class="character-image" id="princess-image">
+                        <h6>Princess Peach</h6>
+                    </label>
+
+                    <label>
+                        <input id="toadette" type="radio" name="character" value="toadette">
+                        <img class="character-image" id="toadette-image">
+                        <h6>Toadette</h6>
+                    </label>
+                </div>
+
+                <!-- <div class="button-text">
+                    Let's Save Mario!
+                </div> -->
+                <button id="submit-button" type="submit">Let's Save Mario!</button>
+                
         </form>
     </main>
 
