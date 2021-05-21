@@ -15,5 +15,4 @@ export function renderStatsHeader() {
 
     div.append(playerP, hpP, goldP);
     header.append(div);
-
 }

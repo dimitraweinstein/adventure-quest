@@ -64,7 +64,7 @@ form.addEventListener('submit', (e)=> {
 
     setTimeout(
         () => window.location = '../map',
-        9000
+        7000
     );
 });
 

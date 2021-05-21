@@ -1,7 +1,5 @@
 import { setPlayer } from './local-storage-utils.js';
-import { renderStatsHeader } from './stats-header.js';
 
-renderStatsHeader();
 
 // import functions and grab DOM elements
 const form = document.querySelector('#player-form');
