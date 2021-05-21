@@ -5,7 +5,6 @@ header {
     background-color: #e52521;
     justify-content: flex-end;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: var(--header-height);
     box-shadow: var(--shadow);

@@ -1,0 +1,36 @@
+/* add home page styles here */
+
+
+header {
+    background-color: #e52521;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+}
+
+
+body {
+    background-color: #fbd00060;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+
+
