@@ -4,7 +4,9 @@
 const prepare = {
     id: 'prepare',
     title: 'Prepare for Adventure',
-    map: {},
+    map: {
+        
+    },
     image: 'quest1-img.png',
     description: `
         Mario will need to be big if he stands a chance to escape. With no money to your name, you'll have to convince Toad, the manager at Luigi's Next Adventure shop for a magic mushroom to give Mario once you reach him.
