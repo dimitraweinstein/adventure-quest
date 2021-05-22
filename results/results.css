@@ -9,6 +9,15 @@ header {
     box-shadow: var(--shadow);
 }
 
+#header-stats {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: #fbd000;
+    border: 3px solid black;
+    border-style: inset;
+    box-shadow: var(--shadow);
+    padding: 6px;
+}
 
 body {
     background-color: #fbd00060;

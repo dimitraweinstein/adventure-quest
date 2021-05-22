@@ -19,7 +19,7 @@ console.log(quest);
 const h1 = document.createElement('h1');
 const img = document.createElement('img');
 const p = document.createElement('p');
-
+const header = document.querySelector('header');
 
 h1.textContent = quest.title;
 console.log();
@@ -68,4 +68,5 @@ form.addEventListener('submit', (e)=> {
     );
 });
 
-section.append(h1, img, p, form);
+header.append(h1);
+section.append(img, p, form);

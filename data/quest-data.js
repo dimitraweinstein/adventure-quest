@@ -5,7 +5,8 @@ const prepare = {
     id: 'prepare',
     title: 'Prepare for Adventure',
     map: {
-        
+        top: '-50%',
+        left: '10%'
     },
     image: 'quest1-img.png',
     description: `

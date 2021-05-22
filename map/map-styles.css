@@ -3,11 +3,21 @@
 
 header {
     background-color: #e52521;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     display: flex;
     align-items: center;
     height: var(--header-height);
     box-shadow: var(--shadow);
+}
+
+#header-stats {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: #fbd000;
+    border: 3px solid black;
+    border-style: inset;
+    box-shadow: var(--shadow);
+    padding: 6px;
 }
 
 
@@ -27,9 +37,30 @@ main {
 
 }
 
+
 h1 {
     display: flex;
-    justify-content: flex-start;
+    justify-self: center;
+    font-size: 2.5rem;
+    text-shadow: -2px 0 #fbd00080, 0 2px #fbd00080, 2px 0 #fbd00080, 0 -2px #fbd00080;
+}
+
+
+a {
+    color: black;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a:visited {
+    font-style: italic;
+}
+
+a:hover {
+    color: #e52521;
+    text-decoration: underline;
 }
 
 

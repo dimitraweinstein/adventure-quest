@@ -2,19 +2,29 @@
 
 header {
     background-color: #e52521;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
 
 
+#header-stats {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background-color: #fbd000;
+    border: 3px solid black;
+    border-style: inset;
+    box-shadow: var(--shadow);
+    padding: 6px;
+}
+
+
+
 body {
     background-color: #fbd00060;
-    background-image: url('');
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 main {
@@ -26,5 +36,56 @@ main {
 
 h1 {
     display: flex;
-    justify-content: flex-start;
+    justify-self: center;
+    font-size: 2.5rem;
+    text-shadow: -2px 0 #fbd00080, 0 2px #fbd00080, 2px 0 #fbd00080, 0 -2px #fbd00080;
 }
+
+section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+/* 
+[type = radio] {
+    display: none;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+}
+
+label {
+    padding: 10px;
+}
+
+label:checked {
+    padding: 10px;
+    border: 2px solid #43b047;
+}
+
+label:hover {
+    padding: 10px;
+    border: 2px solid #43b047;
+
+}
+/* 
+label:checked {
+    border: 2px solid #43b047;
+} */
+
+form > button {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
