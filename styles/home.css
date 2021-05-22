@@ -1,5 +1,8 @@
 /* add home page styles here */
-
+body {
+    width: 100%;
+    height: auto;
+}
 
 header {
     background-color: #e52521;
@@ -122,6 +125,7 @@ button:hover {
     filter: drop-shadow(15px 10px 8px #00000070);
 }
 
+
 [type = radio]:checked + .character-image {
     border: solid 4px #049cd8;
     border-style: inset;
@@ -131,6 +135,19 @@ button:hover {
         0 0 5px 5px #fbd000,
         0 0 7px 10px #fbd000,
         0 0 9px 15px #fbd000;
+    filter: drop-shadow(15px 10px 8px #00000070);
+}
+
+
+[type = radio]:hover + .character-image {
+    border: solid 4px #e52521;
+    border-style: inset;
+    border-radius: 20%;
+    background-color: #43b04790;
+    box-shadow:
+        0 0 5px 5px #43b04790,
+        0 0 7px 10px #43b04790,
+        0 0 9px 15px #43b04790;
     filter: drop-shadow(15px 10px 8px #00000070);
 }
 

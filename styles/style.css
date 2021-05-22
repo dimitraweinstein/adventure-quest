@@ -2,7 +2,10 @@
 * {
     box-sizing: border-box;
 }
-
+body{
+    width: 100%;
+    height: auto;
+}
 body {
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
